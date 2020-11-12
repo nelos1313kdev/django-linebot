@@ -1,0 +1,134 @@
+#wrapper {
+    display: flex;
+}
+
+#wrapper #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper #content-wrapper #content {
+    flex: 1 0 auto;
+}
+
+.container, .container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.bg-gradient-primary {
+    background-color: #A028FB;
+    background-image: linear-gradient(180deg, #A028FB 50%, #e0665e 100%);
+    background-size: cover;
+}
+
+.sidebar .nav-item .nav-link {
+    position: relative;
+}
+
+.sidebar {
+    width: 6.5rem;
+    min-height: 100vh;
+}
+
+.sidebar .nav-item {
+    position: relative;
+}
+
+.sidebar .nav-item:last-child {
+    margin-bottom: 1rem;
+}
+
+.sidebar .nav-item .nav-link {
+    text-align: center;
+    padding: 0.75rem 1rem;
+    width: 6.5rem;
+}
+
+.sidebar .nav-item .nav-link span {
+    font-size: 0.65rem;
+    display: block;
+}
+
+.sidebar .sidebar-brand {
+    height: 4.375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+}
+
+.sidebar .sidebar-brand .sidebar-brand-text {
+    display: none;
+}
+
+.sidebar hr.sidebar-divider {
+    margin: 0 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 14rem !important;
+    }
+    .sidebar .nav-item .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        width: 14rem;
+    }
+    .sidebar .nav-item .nav-link i {
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
+    }
+    .sidebar .nav-item .nav-link span {
+        font-size: 0.85rem;
+        display: inline;
+    }
+    .sidebar .sidebar-brand .sidebar-brand-text {
+        display: inline;
+    }
+}
+
+.sidebar-dark .sidebar-brand {
+    color: #fff;
+}
+
+.sidebar-dark hr.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-dark .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar-dark .nav-item .nav-link i {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
+    color: #fff;
+}
+
+.sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
+    color: #fff;
+}
+
+.profile_picture {
+    width: 200px;
+}
+
+footer.sticky-footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+}
+
+footer.sticky-footer .copyright {
+    line-height: 1;
+    font-size: 0.8rem;
+}

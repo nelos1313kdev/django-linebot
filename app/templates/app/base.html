@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<title>Twitter分析</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark">
+			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+				<div class="sidebar-brand-icon">
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="sidebar-brand-text mx-3">Twitter分析</div>
+			</a>
+			<hr class="sidebar-divider my-0">
+			<li class="nav-item">
+				<a class="nav-link" href="/">
+					<i class="fas fa-fw fa-cog"></i>
+					<span>アカウント</span>
+				</a>
+			</li>
+		</ul>
+
+		<div id="content-wrapper" class="d-flex flex-column">
+			<div id="content">
+				<div class="container-fluid mt-3">
+					{% block content %}
+					{% endblock %}
+				</div>
+			</div>
+            <footer class="sticky-footer bg-white mt-5">
+				<div class="container my-auto">
+					<div class="copyright text-center my-auto">
+						<span>Copyright &copy; Your Website 2020</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	{% block extra_js %}
+    {% endblock %}
+</body>
+
+</html>
