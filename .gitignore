@@ -5,3 +5,6 @@ __pycache__
 *.pyc
 .DS_Store
 .env
+local_settings.py
+ngrok
+command.txt
